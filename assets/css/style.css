@@ -250,4 +250,42 @@ p {
     width: 80%;
     margin: 0 0 1.4rem;
   }
+  .footer-logo {
+  /* width: 100px; */
+  margin-bottom: 20px;
+}
+.footer-content {
+  display: flex;
+  padding: 1em 1em 1em 0;
+  align-items: center;
+}
+.footer-content .icon {
+  /* display: inline-block; */
+  width: 10%;
+  /* padding-right: 10px; */
+}
+.icon img {
+  width: 50%;
+}
+.footer-content .txt-contents {
+  /* display: inline-block; */
+  width: 90%;
+  font-size: 0.9em;
+}
+.footer-info {
+  padding-bottom: 50px;
+}
+.contact-us ul,
+.about-us ul {
+  padding: 10px 0;
+}
+.contact-us li,
+.about-us li {
+  padding: 5px 0;
+}
+.end {
+  padding: 20px 0 20px 0;
+  font-size: 0.7em;
+  text-align: center;
+}
 /* } */
