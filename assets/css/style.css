@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+:root {
+  /* colors */
+  /* primary */
+  --darkBlueIntro: hsl(217, 28%, 15%);
+  --darkBlueMain: hsl(218, 28%, 13%);
+  --darkBlueFooter: hsl(216, 53%, 9%);
+  --darkBlueTesti: hsl(219, 30%, 18%);
+
+  /* accent */
+  --cyan: hsl(176, 68%, 64%);
+  --blue: hsl(198, 60%, 50%);
+}
+
+/* reset */
+html,
+body {
+  font-size: 14px;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  background-color: var(--darkBlueMain);
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+ul {
+  list-style-type: none;
+}
+p,
+a,
+ul,
+li {
+  margin: 0;
+}
+p {
+  line-height: 1.5em;
+}
+
+/* utility class */
+.px-1 {
+  padding: 0 1em;
+}
+.px-2 {
+  padding: 0 2em;
+}
+.py-1 {
+  padding: 1em 0;
+}
+.py-2 {
+  padding: 2em 0;
+}
+.lh-1-7 {
+  line-height: 1.7em;
+}
+.lh-2 {
+  line-height: 2em;
+}
+.btn {
+  display: inline-block;
+  background: linear-gradient(to right, var(--cyan), var(--blue));
+  border-radius: 50px;
+  font-weight: 700;
+}
+/* Mobile style */
+@media (max-width: 380px) {
+  /* HEADER */
+  #head {
+    /* align-items: center; */
+
+    font-family: 'Raleway', sans-serif;
+    background: var(--darkBlueIntro);
+    padding: 1.2em 1.8em;
+  }
+  #head .navbar {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .logo {
+    max-width: 80px;
+    /* margin: 0 0; */
+  }
+  .f-wrap {
+    display: flex;
+    align-items: center;
+  }
+  .f-wrap li {
+    padding-left: 1.3em;
+  }
+  .f-wrap a {
+    padding: 0.3em 0;
+  }
+  .f-wrap a:hover {
+    color: var(--cyan);
+    transition: all 0.3s;
+  }
+
+  /* INTRO SECTION */
+  #intro {
+    padding: 0 2.5rem;
+    padding-top: 2em;
+    background: url(../img/bg-curvy-mobile.svg) no-repeat;
+    background-size: 120%;
+    background-position: bottom;
+    background-color: var(--darkBlueIntro);
+    text-align: center;
+  }
+  .intro-img {
+    margin: 0 auto;
+    width: 85%;
+  }
+  .intro-img img {
+    width: 100%;
+  }
+
+  #intro .curvy-bg {
+    height: 50px;
+    background: url(../img/bg-curvy-mobile.svg) no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+  }
+
+  #intro .btn {
+    margin-top: 30px;
+    padding: 1.1em 6em;
+    margin-bottom: 4rem;
+  }
+
+  /* FEATURES SECTION */
+  #features .content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3.5rem 2.5rem;
+  }
+
+  .content h2 {
+    font-size: 1.3em;
+  }
+
+  /* Stay Productive section */
+  #productive {
+    /* display: flex; */
+    margin-top: 50px;
+    padding: 2rem 2.5rem;
+    /* justify-content: center; */
+    /* margin-bottom: 100px; */
+  }
+  #productive .productive-text {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+  #productive .img-productive {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .img-productive img {
+    width: 100%;
+  }
+  #productive h2 {
+    font-size: 1.3em;
+    text-align: center;
+  }
+
+  #productive a {
+    color: var(--cyan);
+    border-bottom: 1px solid var(--cyan);
+    padding: 0.3em;
+  }
+  #productive .arrow img {
+    margin-bottom: -3px;
+  }
+
+  /* Testimonial section */
+  #testi {
+    position: relative;
+    margin: 172px auto 400px;
+    /* margin-bottom: 300px; */
+    width: 80%;
+    line-height: 1.5em;
+  }
+  #testi .quote {
+    position: absolute;
+    top: -35px;
+  }
+  .quote img {
+    max-width: 30px;
+  }
+  #testi .card {
+    padding: 2rem 2rem;
+    background: var(--darkBlueTesti);
+    margin-top: 50px;
+    border-radius: 5px;
+  }
+  #testi .card-profile {
+    display: flex;
+    align-items: center;
+    padding-top: 1.3rem;
+  }
+  .card-profile img {
+    max-width: 35px;
+    margin-right: 1em;
+    border-radius: 50%;
+  }
+  .card-profile-name {
+    display: inline-block;
+  }
+  .card-profile-name h4,
+  h6 {
+    margin: 0;
+  }
+
+  /* Footer section */
+  #footer {
+    background-color: var(--darkBlueFooter);
+  }
+  #footer .box {
+    background-color: var(--darkBlueFooter);
+    /* position: relative; */
+    width: 85%;
+    margin: 0 auto;
+  }
+  #footer .form-card {
+    position: relative;
+    text-align: center;
+    top: -200px;
+    /* width: 75%; */
+    margin: 0 auto -150px;
+    background: var(--darkBlueTesti);
+    padding: 2rem 2rem;
+    border-radius: 10px;
+  }
+
+  .form-card input {
+    width: 80%;
+    padding: 1.1rem;
+    border: none;
+    margin: 2rem 0;
+    border-radius: 50px;
+  }
+
+  .form-card .btn {
+    /* margin-top: 30px; */
+    padding: 1.1rem;
+    width: 80%;
+    margin: 0 0 1.4rem;
+  }
+}
