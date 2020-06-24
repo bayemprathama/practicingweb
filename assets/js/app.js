@@ -1,3 +1,4 @@
+// smooth scrolling
 $('.navbar a, .btn').on('click', function (event) {
   console.log('run');
   if (this.hash !== '') {
