@@ -365,6 +365,9 @@ h6 {
   .icon img {
     width: 15px;
   }
+  .footer-content .txt-contents {
+    font-size: 1rem;
+  }
 }
 @media screen and (min-width: 1200px) {
   #head .navbar {
