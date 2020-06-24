@@ -66,7 +66,7 @@ p {
   font-weight: 700;
 }
 /* Mobile style */
-@media (max-width: 500px) {
+/* @media (max-width: 500px) { */
   /* HEADER */
   #head {
     /* align-items: center; */
@@ -250,4 +250,4 @@ p {
     width: 80%;
     margin: 0 0 1.4rem;
   }
-}
+/* } */
