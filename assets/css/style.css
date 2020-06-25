@@ -40,27 +40,27 @@ li {
   margin: 0;
 }
 p {
-  line-height: 1.5em;
+  line-height: 1.5rem;
 }
 
 /* utility class */
 .px-1 {
-  padding: 0 1em;
+  padding: 0 1rem;
 }
 .px-2 {
-  padding: 0 2em;
+  padding: 0 2rem;
 }
 .py-1 {
-  padding: 1em 0;
+  padding: 1rem 0;
 }
 .py-2 {
-  padding: 2em 0;
+  padding: 2rem 0;
 }
 .lh-1-7 {
-  line-height: 1.7em;
+  line-height: 1.7rem;
 }
 .lh-2 {
-  line-height: 2em;
+  line-height: 2rem;
 }
 .btn {
   display: inline-block;
@@ -69,14 +69,11 @@ p {
   font-weight: 700;
 }
 /* Mobile style */
-/* @media (max-width: 380px) { */
 /* HEADER */
 #head {
-  /* align-items: center; */
-
   font-family: 'Raleway', sans-serif;
   background: var(--darkBlueIntro);
-  padding: 1.2em 1.8em;
+  padding: 1.2rem 1.8rem;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -96,10 +93,10 @@ p {
   align-items: center;
 }
 .f-wrap li {
-  padding-left: 1.3em;
+  padding-left: 1.3rem;
 }
 .f-wrap a {
-  padding: 0.3em 0;
+  padding: 0.3rem 0;
 }
 .f-wrap a:hover {
   color: var(--cyan);
@@ -109,7 +106,7 @@ p {
 /* INTRO SECTION */
 #intro {
   padding: 0 2.5rem;
-  padding-top: 2em;
+  padding-top: 2rem;
   background: url(../img/bg-curvy-mobile.svg) no-repeat;
   background-size: 120%;
   background-position: bottom;
@@ -134,7 +131,7 @@ p {
 
 #intro .btn {
   margin-top: 30px;
-  padding: 1.1em 6em;
+  padding: 1.1rem 6rem;
   margin-bottom: 4rem;
 }
 
@@ -144,10 +141,6 @@ p {
   flex-direction: column;
   text-align: center;
   padding: 3.5rem 2.5rem;
-}
-
-.content h2 {
-  font-size: 1.3em;
 }
 
 /* Stay Productive section */
@@ -170,14 +163,14 @@ p {
   width: 100%;
 }
 #productive h2 {
-  font-size: 1.3em;
+  font-size: 1.3rem;
   text-align: center;
 }
 
 #productive a {
   color: var(--cyan);
   border-bottom: 1px solid var(--cyan);
-  padding: 0.3em;
+  padding: 0.3rem;
 }
 #productive .arrow img {
   margin-bottom: -3px;
@@ -189,7 +182,7 @@ p {
   margin: 172px auto 400px;
   /* margin-bottom: 300px; */
   width: 80%;
-  line-height: 1.5em;
+  line-height: 1.5rem;
 }
 #testi .quote {
   position: absolute;
@@ -211,7 +204,7 @@ p {
 }
 .card-profile img {
   max-width: 35px;
-  margin-right: 1em;
+  margin-right: 1rem;
   border-radius: 50%;
 }
 .card-profile-name {
@@ -263,7 +256,7 @@ h6 {
 }
 .footer-content {
   display: flex;
-  padding: 1em 1em 1em 0;
+  padding: 1rem 1rem 1rem 0;
   align-items: center;
 }
 .footer-content .icon {
@@ -277,7 +270,7 @@ h6 {
 .footer-content .txt-contents {
   /* display: inline-block; */
   width: 90%;
-  font-size: 0.9em;
+  font-size: 0.9rem;
 }
 
 .contact-us ul,
@@ -294,11 +287,14 @@ h6 {
 }
 .end {
   padding: 20px 0 20px 0;
-  font-size: 0.7em;
+  font-size: 0.7rem;
   text-align: center;
 }
 /* } */
-@media screen and (min-width: 728px) {
+@media screen and (min-width: 521px) {
+  /* body {
+    font-size: 16px;
+  } */
   #head .navbar {
     max-width: 1000px;
   }
@@ -318,19 +314,23 @@ h6 {
     max-width: 362px;
   }
   .intro-txt {
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
   }
   #features {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 700px;
+    width: 80%;
+    max-width: 700px;
     margin: 0 auto;
   }
   #features .content {
     flex: auto;
     width: 50%;
+  }
+  .content h2 {
+    font-size: 1.3rem;
   }
   /* #productive {
     display: flex;
@@ -360,16 +360,33 @@ h6 {
   }
 
   .end {
-    font-size: 1em;
+    font-size: 1rem;
   }
   .icon img {
     width: 15px;
   }
   .footer-content .txt-contents {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 930px) {
+  #testi {
+    width: 90%;
+  }
+  #testi .card-container {
+    display: flex;
+  }
+  #testi .card {
+    /* width: 20%; */
+    margin: 0 15px;
+    flex: auto;
+    padding: 2rem;
+  }
+}
+@media screen and (min-width: 1170px) {
+  body {
+    font-size: 16px;
+  }
   #head .navbar {
     max-width: 1000px;
   }
@@ -388,7 +405,7 @@ h6 {
     width: 40%;
   }
   .intro-txt {
-    max-width: 500px;
+    max-width: 700px;
     margin: 0 auto;
   }
   #features {
@@ -396,7 +413,7 @@ h6 {
     flex-wrap: wrap;
     flex-direction: row;
     width: 800px;
-    margin: 0 auto;
+    margin: 70px auto 70px;
   }
   #features .content {
     flex: auto;
@@ -433,7 +450,7 @@ h6 {
     /* width: 20%; */
     margin: 0 20px;
     flex: auto;
-    padding: 3em;
+    padding: 3rem;
   }
   #footer .form-card {
     width: 70%;
@@ -476,7 +493,7 @@ h6 {
     width: 15%;
   }
   .end {
-    font-size: 1em;
+    font-size: 1rem;
   }
   .icon img {
     width: 15px;
